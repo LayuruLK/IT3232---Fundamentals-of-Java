@@ -7,5 +7,14 @@ public class StudentApp {
          students.add(new Student("Lahiru", 91));
          students.add(new Student("Samanmali", 72));
          students.add(new Student("Tharushi", 88));
+
+         int totalMarks = 0;
+             for (Student s : students) {
+                 totalMarks += s.getMarks();  // Using getter
+             }
+ 
+         double average = (double) totalMarks / students.size();
+ 
+         System.out.println("Average Marks of Students: " + average);
      }
  }
