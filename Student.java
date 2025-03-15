@@ -12,4 +12,11 @@
          this.name = name;
          this.marks = marks;
      }
+
+     public String getName() {
+         return name;
+     }
+     public void setName(String name) {
+         this.name = name;
+     }
  }
